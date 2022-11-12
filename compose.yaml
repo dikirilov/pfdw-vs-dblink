@@ -1,0 +1,37 @@
+services:
+  db1:
+    image: postgres:latest
+    environment:
+      TZ: "Asia/Almaty"
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "admin"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+    volumes:
+      - ./db1/init_sql:/docker-entrypoint-initdb.d
+      - ./db1/data:/var/lib/postgresql/data
+    ports:
+      - "5435:5432"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+  db2:
+    image: postgres:latest
+    environment:
+      TZ: "Asia/Almaty"
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "admin"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+    volumes:
+      - ./db2/init_sql:/docker-entrypoint-initdb.d
+      - ./db2/data:/var/lib/postgresql/data
+    ports:
+      - "5436:5432"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M

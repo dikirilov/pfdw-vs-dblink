@@ -1,0 +1,3 @@
+truncate table ch_replica_pfdw_push;
+truncate table ch_replica_pfdw_pull;
+truncate table ch_replica_dblink_pull;

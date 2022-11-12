@@ -1,0 +1,1 @@
+truncate table ch_replica_local;
