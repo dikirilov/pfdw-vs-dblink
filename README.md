@@ -1,6 +1,6 @@
 # Postgres_fdw vs dblink to transfer data between PostgreSQL instances
 This repository represents the test set up.
-The article describing the comparison: TBD.
+The [article](https://medium.com/@dikirilovskiy/need-to-transfer-data-between-postgresql-dont-be-in-a-rush-to-use-dblink-df44f676b184) describing the comparison.
 
 ## Prerequisites
 You need docker and psql installed on your machine. 
