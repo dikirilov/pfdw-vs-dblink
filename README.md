@@ -9,8 +9,8 @@ You may use both, Unix and Windows machines, although only Unix scripts are prov
 ## Algorithm
 Copy repository to your local machine and navigate to the folder.
 
-Adjust amount of test data to generate at ***db1/sql/db1_data_generation.sql***. It goes 1 000 000 records 'out-of-the-box'.
-Adjust resource limits for containers at ***compose.yaml***. It goes 0.5 cpu and 512m of memory for each one.
+Adjust amount of test data to generate at ***db1/sql/db1_data_generation.sql***. It goes with 1 000 000 records 'out-of-the-box'.
+Adjust resource limits for containers at ***compose.yaml***. It goes with 0.5 cpu and 512m of memory for each one.
 
 
 Execute:
