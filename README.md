@@ -37,7 +37,7 @@ After test completed you need to erase excessive data by executing:
 ```
 
 
-If you adjust ***compose.yaml*** between test, you need to reinitialize containers by executing
+If you adjust ***compose.yaml*** between tests, you need to reinitialize containers by executing:
 ```
 docker compose down
 docker compose up
